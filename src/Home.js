@@ -26,6 +26,7 @@ const Home = () => {
         </p>
       </div>
       <div className='div'></div>
+      {/* <div className='vertical'></div> */}
       <div className="head">
         <h1 className="head--1">hiding behind <br/> screens:</h1>
         <div className="flex">

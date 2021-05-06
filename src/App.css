@@ -18,20 +18,20 @@ body {
 }
 
 :root {
-    --small: lighter;
-    --bold: bold;
-    --bolder: bolder;
-    --background: #ffefef;
-    --color: #ff5a5a;
-    --font: #ff5959;
-    --filter: blur(200px);
-    --small-pad: 50px;
-    --small-mag: 20px 15px;
-    --medium-pad: 60px;
-    --medium-mag: 35px 25px;
-    --big-pad: 80px 70px;
-    --big-mag: 50px 40px;
-  }
+  --small: lighter;
+  --bold: bold;
+  --bolder: bolder;
+  --background: #ffefef;
+  --color: #ff5a5a;
+  --font: #ff5959;
+  --filter: blur(200px);
+  --small-pad: 50px;
+  --small-mag: 20px 15px;
+  --medium-pad: 60px;
+  --medium-mag: 35px 25px;
+  --big-pad: 80px 70px;
+  --big-mag: 50px 40px;
+}
 
 .container {
   background: black;
@@ -82,107 +82,207 @@ body {
   }
 }
 
-img[alt='hijab']{
-    width: 100%;
+img[alt="hijab"] {
+  width: 100%;
 }
 
-.hijab{
-    display: flex;
-    margin: 20px 0;
+.hijab {
+  display: flex;
+  margin: 20px 0;
 }
-.hijab img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    z-index: 2;
-}
-
-.hijab div{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: rgb(145, 139, 139);
-    margin-left: -50px;
+.hijab img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  z-index: 2;
 }
 
-@media only screen and (min-device-width: 50px) and (max-device-width: 480px){
-    .two,.head{
-        padding: var(--small-mag);
-    }
-
-    .div{
-        margin: 10px 15px;
-        width: 90%;
-    }
-
-    .para{
-        padding-bottom: 20px;
-    }
-
-    .aut{
-        font-weight: var(--bold);
-        padding: 15px 0;
-    }
-
-    .head--1,.head--2,.h4 h4,.paragraph p{
-        padding-bottom: 20px;
-    }
-
-    .h4{
-        display: flex;
-      justify-content: space-between;
-    }
-
-
-    
-
-    .head--3{
-      padding: 20px 0 10px 0
-    }
+.hijab div {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgb(145, 139, 139);
+  margin-left: -50px;
 }
 
-@media only screen and (min-device-width: 482px) and (max-device-width: 796px){
-  img[alt='hijab']{
-    height: 50%;
-}
-  
-  .two,.head{
-      padding: var(--medium-mag);
+@media only screen and (min-device-width: 50px) and (max-device-width: 480px) {
+  .two,
+  .head {
+    padding: var(--small-mag);
   }
 
-  .div{
-      margin: 10px 20px;
-      width: 90%;
+  .div {
+    margin: 10px 15px;
+    width: 90%;
   }
 
-  .para{
-      padding-bottom: 20px;
+  .vertical{
+    display: none;
   }
 
-  .aut{
-      font-weight: var(--bold);
-      padding: 15px 0;
-  }
-
-  .head--1,.head--2,.paragraph p{
-      padding-bottom: 20px;
-  }
-
-  .h4{
-      display: flex;
-    justify-content: space-between;
+  .para {
     padding-bottom: 20px;
   }
 
-  .h4 h4{
-    flex: 1;
+  .aut {
+    font-weight: var(--bold);
+    padding: 15px 0;
   }
 
-  .head--3{
+  .head--1,
+  .head--2,
+  .h4 h4,
+  .paragraph p {
+    padding-bottom: 20px;
+  }
+
+  .h4 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .head--3 {
     padding: 20px 0 10px 0;
   }
 }
 
-@media only screen and (min-width: 798px) and (max-width: 992px){
+@media only screen and (min-device-width: 482px) and (max-device-width: 796px) {
+  img[alt="hijab"] {
+    height: 50%;
+  }
+.vertical{
+  display: none;
+}
+  .two,
+  .head {
+    padding: var(--medium-mag);
+  }
+
+  .div {
+    margin: 10px 20px;
+    width: 90%;
+  }
+
+  .para {
+    padding-bottom: 20px;
+  }
+
+  .aut {
+    font-weight: var(--bold);
+    padding: 15px 0;
+  }
+
+  .head--1,
+  .head--2,
+  .paragraph p {
+    padding-bottom: 20px;
+  }
+
+  .h4 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+
+  .h4 h4 {
+    flex: 1;
+  }
+
+  .head--3 {
+    padding: 20px 0 10px 0;
+  }
+}
+
+@media only screen and (min-width: 798px) and (max-width: 992px) {
+  .container {
+    display: flex;
+    /* position: relative; */
+  }
+  /* .div {
+    display: none;
+  } */
+
+  .div {
+    width: 3px;
+    animation: color 2s ease-in infinite;
+    background-image: linear-gradient(
+      to right,
+      #360134,
+      #560b4b,
+      #781863,
+      #9e2679,
+      #c5338f,
+      #d9378d,
+      #ed3d8a,
+      #ff4586,
+      #ff4e6c,
+      #ff6050,
+      #ff7532,
+      #ff8c00
+    );
+    height: 100%;
+  }
   
+  @keyframes color {
+    100% {
+      background-image: linear-gradient(
+        to right,
+        #a4299f,
+        #a82294,
+        #ac1b88,
+        #ad157e,
+        #ae1173,
+        #b71468,
+        #be1d5c,
+        #c32851,
+        #cc3f41,
+        #d05632,
+        #ce6d24,
+        #c88319
+      );
+    }
+  }
+  /* .container::before {
+    content: '';
+    position: absolute;
+    width: px;
+    height: 100%;
+    background-image: linear-gradient(
+    to right,
+    #360134,
+    #560b4b,
+    #781863,
+    #9e2679,
+    #c5338f,
+    #d9378d,
+    #ed3d8a,
+    #ff4586,
+    #ff4e6c,
+    #ff6050,
+    #ff7532,
+    #ff8c00
+  );
+  animation: colors 2s ease-in infinite;
+  left: 80%;
+}
+
+@keyframes colors {
+  100% {
+    background-image: linear-gradient(
+      to right,
+      #a4299f,
+      #a82294,
+      #ac1b88,
+      #ad157e,
+      #ae1173,
+      #b71468,
+      #be1d5c,
+      #c32851,
+      #cc3f41,
+      #d05632,
+      #ce6d24,
+      #c88319
+    );
+  }
+  } */
 }
