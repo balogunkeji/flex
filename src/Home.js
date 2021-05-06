@@ -52,7 +52,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <h1>article by <br/> rachel ramirez</h1>
+        <h1 className='head--3'>article by <br/> rachel ramirez</h1>
       </div>
     </div>
   );

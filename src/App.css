@@ -13,6 +13,8 @@ html {
 body {
   font-size: calc(1rem + 1vw);
   color: rgb(230, 225, 225);
+  word-spacing: 2px;
+  line-height: 1.5;
 }
 
 :root {
@@ -81,7 +83,7 @@ body {
 }
 
 img[alt='hijab']{
-    max-width: 100%;
+    width: 100%;
 }
 
 .hijab{
@@ -122,17 +124,65 @@ img[alt='hijab']{
         padding: 15px 0;
     }
 
-    .head--1,.head--2{
+    .head--1,.head--2,.h4 h4,.paragraph p{
         padding-bottom: 20px;
     }
 
     .h4{
         display: flex;
-
-    }
-    .h4 h4{
-        margin-left: 2px;
-        padding-bottom: 20px;
+      justify-content: space-between;
     }
 
+
+    
+
+    .head--3{
+      padding: 20px 0 10px 0
+    }
+}
+
+@media only screen and (min-device-width: 482px) and (max-device-width: 796px){
+  img[alt='hijab']{
+    height: 50%;
+}
+  
+  .two,.head{
+      padding: var(--medium-mag);
+  }
+
+  .div{
+      margin: 10px 20px;
+      width: 90%;
+  }
+
+  .para{
+      padding-bottom: 20px;
+  }
+
+  .aut{
+      font-weight: var(--bold);
+      padding: 15px 0;
+  }
+
+  .head--1,.head--2,.paragraph p{
+      padding-bottom: 20px;
+  }
+
+  .h4{
+      display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+
+  .h4 h4{
+    flex: 1;
+  }
+
+  .head--3{
+    padding: 20px 0 10px 0;
+  }
+}
+
+@media only screen and (min-width: 798px) and (max-width: 992px){
+  
 }
