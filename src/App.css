@@ -83,7 +83,8 @@ body {
 }
 
 img[alt="hijab"] {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .hijab {
@@ -193,62 +194,22 @@ img[alt="hijab"] {
   }
 }
 
-@media only screen and (min-width: 798px) and (max-width: 992px) {
+@media only screen and (min-width: 998px) and (max-width: 1198px) {
   .container {
     display: flex;
-    /* position: relative; */
   }
-  /* .div {
-    display: none;
-  } */
-
   .div {
-    width: 3px;
-    animation: color 2s ease-in infinite;
-    background-image: linear-gradient(
-      to right,
-      #360134,
-      #560b4b,
-      #781863,
-      #9e2679,
-      #c5338f,
-      #d9378d,
-      #ed3d8a,
-      #ff4586,
-      #ff4e6c,
-      #ff6050,
-      #ff7532,
-      #ff8c00
-    );
-    height: 100%;
+    position: relative;
+    margin: 0 30px;
   }
-  
-  @keyframes color {
-    100% {
-      background-image: linear-gradient(
-        to right,
-        #a4299f,
-        #a82294,
-        #ac1b88,
-        #ad157e,
-        #ae1173,
-        #b71468,
-        #be1d5c,
-        #c32851,
-        #cc3f41,
-        #d05632,
-        #ce6d24,
-        #c88319
-      );
-    }
-  }
-  /* .container::before {
+
+  .div::before {
     content: '';
-    position: absolute;
-    width: px;
+    position: fixed;
+    width: 3px;
     height: 100%;
     background-image: linear-gradient(
-    to right,
+    to top,
     #360134,
     #560b4b,
     #781863,
@@ -262,14 +223,13 @@ img[alt="hijab"] {
     #ff7532,
     #ff8c00
   );
-  animation: colors 2s ease-in infinite;
-  left: 80%;
+  animation: colors 2s ease-in-out alternate infinite;
 }
 
 @keyframes colors {
   100% {
     background-image: linear-gradient(
-      to right,
+      to bottom,
       #a4299f,
       #a82294,
       #ac1b88,
@@ -284,5 +244,17 @@ img[alt="hijab"] {
       #c88319
     );
   }
-  } */
+  }
+
+  img[alt="hijab"] {
+    flex: 1.5;
+    height: auto;
+  }
+
+  .two{
+    flex: 1;
+  }
+  .head{
+    flex: 5;
+  }
 }
