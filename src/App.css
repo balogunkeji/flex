@@ -117,7 +117,7 @@ img[alt="hijab"] {
     width: 90%;
   }
 
-  .vertical{
+  .vertical {
     display: none;
   }
 
@@ -151,9 +151,9 @@ img[alt="hijab"] {
   img[alt="hijab"] {
     height: 50%;
   }
-.vertical{
-  display: none;
-}
+  .vertical {
+    display: none;
+  }
   .two,
   .head {
     padding: var(--medium-mag);
@@ -199,51 +199,55 @@ img[alt="hijab"] {
     display: flex;
   }
   .div {
+    display: none;
+  }
+  .vertical {
     position: relative;
     margin: 0 30px;
   }
 
-  .div::before {
-    content: '';
-    position: fixed;
+  .vertical::before {
+    content: "";
+    position: absolute;
     width: 3px;
-    height: 100%;
+    height: 97%;
     background-image: linear-gradient(
-    to top,
-    #360134,
-    #560b4b,
-    #781863,
-    #9e2679,
-    #c5338f,
-    #d9378d,
-    #ed3d8a,
-    #ff4586,
-    #ff4e6c,
-    #ff6050,
-    #ff7532,
-    #ff8c00
-  );
-  animation: colors 2s ease-in-out alternate infinite;
-}
-
-@keyframes colors {
-  100% {
-    background-image: linear-gradient(
-      to bottom,
-      #a4299f,
-      #a82294,
-      #ac1b88,
-      #ad157e,
-      #ae1173,
-      #b71468,
-      #be1d5c,
-      #c32851,
-      #cc3f41,
-      #d05632,
-      #ce6d24,
-      #c88319
+      to top,
+      #360134,
+      #560b4b,
+      #781863,
+      #9e2679,
+      #c5338f,
+      #d9378d,
+      #ed3d8a,
+      #ff4586,
+      #ff4e6c,
+      #ff6050,
+      #ff7532,
+      #ff8c00
     );
+    margin: var(--small-mag);
+    animation: colors 2s ease-in-out alternate infinite;
   }
+
+  @keyframes colors {
+    100% {
+      background-image: linear-gradient(
+        to bottom,
+        #a4299f,
+        #a82294,
+        #ac1b88,
+        #ad157e,
+        #ae1173,
+        #b71468,
+        #be1d5c,
+        #c32851,
+        #cc3f41,
+        #d05632,
+        #ce6d24,
+        #c88319
+      );
+    }
   }
 
   img[alt="hijab"] {
@@ -251,10 +255,182 @@ img[alt="hijab"] {
     height: auto;
   }
 
-  .two{
-    flex: 1;
+  .two {
+    flex: 2;
   }
-  .head{
+  .head {
+    flex: 4;
+  }
+
+.two,
+.head {
+  padding: var(--small-mag);
+}
+
+p,
+.aut,
+.h4 h4 {
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.head--1 {
+  padding-bottom: 150px;
+}
+
+.para {
+  padding-bottom: 70%;
+}
+
+.hijab,
+.aut {
+  padding-bottom: 15px;
+}
+
+.h4 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.paragraph p {
+  padding: 20px 0;
+}
+
+.paragraph p:last-child {
+  padding-bottom: 50px;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    display: flex;
+    overflow: hidden;
+  }
+  .div {
+    display: none;
+  }
+  .vertical {
+    position: relative;
+    margin: 0 30px;
+  }
+
+  .vertical::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 97%;
+    background-image: linear-gradient(
+      to top,
+      #360134,
+      #560b4b,
+      #781863,
+      #9e2679,
+      #c5338f,
+      #d9378d,
+      #ed3d8a,
+      #ff4586,
+      #ff4e6c,
+      #ff6050,
+      #ff7532,
+      #ff8c00
+    );
+    margin: var(--small-mag);
+    animation: colors 2s ease-in-out alternate infinite;
+  }
+
+  @keyframes colors {
+    100% {
+      background-image: linear-gradient(
+        to bottom,
+        #a4299f,
+        #a82294,
+        #ac1b88,
+        #ad157e,
+        #ae1173,
+        #b71468,
+        #be1d5c,
+        #c32851,
+        #cc3f41,
+        #d05632,
+        #ce6d24,
+        #c88319
+      );
+    }
+  }
+
+  img[alt="hijab"] {
+    flex: 1.5;
+    height: auto;
+  }
+
+  .two {
+    flex: 2;
+  }
+  .head {
     flex: 5;
   }
+
+.two {
+  padding: var(--medium-mag);
+}
+
+.head {
+  padding: var(--small-mag);
+}
+
+p,
+.aut,
+.h4 h4 {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.head--1 {
+  padding-bottom: 180px;
+}
+
+.para {
+  padding-bottom: 100%;
+}
+
+.hijab{
+  padding-bottom: 15px;
+}
+
+.aut{
+  padding-bottom: 30px;
+}
+
+.h4 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.h4 h4{
+  flex: 1;
+}
+
+.paragraph{
+  display: flex;
+}
+
+.paragraph p {
+  padding-top:60px ;
+  padding-bottom: 120px;
+  flex: 1;
+}
+
+.paragraph p:last-child {
+  padding-bottom: 50px;
+  padding-left: 30px;
+}
 }
